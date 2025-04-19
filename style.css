@@ -1,0 +1,70 @@
+
+    body {
+      margin: 0;
+      font-family: 'Fira Code', monospace;
+      background: #1a1a1a;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    #game-container {
+      max-width: 800px;
+      width: 90%;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      color: #facc15;
+    }
+
+    #setup, #game, #result {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    select, button, textarea, input[type="text"] {
+      padding: 0.8rem;
+      font-size: 1rem;
+      border-radius: 0.5rem;
+      border: none;
+      outline: none;
+      font-family: inherit;
+    }
+
+    select, button {
+      background: #272727;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    textarea {
+      background: #111;
+      color: #0f0;
+      resize: none;
+      height: 100px;
+    }
+
+    #sentence {
+      font-size: 2rem;
+      padding: 1rem;
+      background: #111;
+      border-radius: 0.5rem;
+      line-height: 2.5rem;
+    }
+
+    #stats, #timer {
+      text-align: center;
+      font-size: 1rem;
+      color: #ccc;
+    }
+
+    #timer {
+      font-weight: bold;
+      color: #f87171;
+    }

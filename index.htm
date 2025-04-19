@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Typing Game</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="game-container">
+    <h1>MonkeyType Clone</h1>
+    <div id="setup">
+      <label for="difficulty">Choose difficulty:</label>
+      <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+
+      <label for="timeSelect">Select Time:</label>
+      <select id="timeSelect">
+        <option value="15">15 Seconds</option>
+        <option value="30">30 Seconds</option>
+        <option value="60">60 Seconds</option>
+      </select>
+
+      <label for="customText">Or enter custom text:</label>
+      <input type="text" id="customText" placeholder="Enter custom sentence...">
+
+      <button id="start-btn">Start Game</button>
+    </div>
+
+    <div id="game" style="display: none;">
+      <p id="timer">Time: 30s</p>
+      <div id="sentence"></div>
+      <textarea id="input" placeholder="Start typing..."></textarea>
+      <p id="stats">WPM: 0 | Correct Words: 0 | Score: 0</p>
+    </div>
+
+    <div id="result" style="display: none; text-align: center;">
+      <h2>Test Completed</h2>
+      <p id="final-stats"></p>
+      <button onclick="location.reload()">Restart Test</button>
+    </div>
+  </div>
+
+ <script type="module" src="script.js"></script>
+</body>
+</html>
